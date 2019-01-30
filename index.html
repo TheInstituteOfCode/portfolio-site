@@ -1,0 +1,157 @@
+---
+student:
+  - name: Gemma
+    para: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    website_url: https://picsum.photos/200/300/?random
+  - name: Bec
+    para: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    website_url: https://picsum.photos/200/300/?random
+
+projects:
+  - name: Gemma
+    para: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    website_url: https://picsum.photos/200/300/?random
+  - name: Bec
+    para: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    website_url: https://picsum.photos/200/300/?random
+---
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Alice|Playfair+Display" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <title></title>
+</head>
+<body class="flex">
+  <div class="horizontal-sec mentor" data-horizontal-sec="sec-1">
+    <header class="sec " data-vert-sec="sec-1">
+      <div class="overlay horizontal-center full-screen-height flex vert-even-spaced ">
+
+      <h2 class="title">
+        The Mentor
+      </h2>
+      <p class="screen-vertical-wipe svg-button-case screen-horizontal-wipe" data-horizontal-target="sec-1" data-vert-target="sec-2"><svg viewBox="0 0 100 100">
+  <polygon points="0,10 50,90 100,10 50,65"/>
+</svg></p>
+    </div>
+    </header>
+    <section class="inactive sec" data-vert-sec="sec-2">
+      <p class="screen-vertical-wipe svg-button-case reset-horizontal" data-vert-target="sec-1"><svg viewBox="0 0 100 100">
+  <polygon points="0,90 50,10 100,90 50,45"/></svg></p>
+      <div class="grid full-width">
+        <div class="col-3">
+          <img src="https://picsum.photos/300/300/?random" class="
+          full-width" alt="Daniel Swinkels">
+        </div>
+        <div class="col-9">
+          <h2>Dan as a Mentor</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+
+      <p class="screen-vertical-wipe svg-button-case" data-vert-target="sec-3"><svg viewBox="0 0 100 100">
+  <polygon points="0,10 50,90 100,10 50,65"/>
+</svg></p>
+    </section>
+    <section class="inactive sec" data-vert-sec="sec-3">
+      <p class="screen-vertical-wipe svg-button-case" data-vert-target="sec-2"><svg viewBox="0 0 100 100">
+  <polygon points="0,90 50,10 100,90 50,45"/></svg></p>
+      <h2>Student Reviews</h2>
+      {% for student in page.student %}
+      <div class="grid full-width alt-div">
+        <div class="col-6">
+          <h2>{{student.name}}</h2>
+          <p>{{student.para}}</p>
+        </div>
+        <div class="col bg" style="background-image:url('{{student.website_url}}')">
+        </div>
+      </div>
+      {% endfor %}
+      <p class="screen-vertical-wipe svg-button-case" data-vert-target="sec-4"><svg viewBox="0 0 100 100">
+  <polygon points="0,10 50,90 100,10 50,65"/>
+</svg></p>
+    </section>
+  </div>
+  <div class="horizontal-sec developer" data-horizontal-sec="sec-2">
+    <header class="sec" data-vert-sec="sec-1">
+      <div class="overlay horizontal-center full-screen-height flex vert-even-spaced ">
+
+      <h2 class="title">
+        The Developer
+      </h2>
+      <p class="screen-vertical-wipe svg-button-case screen-horizontal-wipe" data-horizontal-target="sec-2" data-vert-target="sec-2"><svg viewBox="0 0 100 100">
+  <polygon points="0,10 50,90 100,10 50,65"/>
+</svg></p>
+      </div>
+    </header >
+    <section class="inactive sec" data-vert-sec="sec-2">
+      <p class="screen-vertical-wipe svg-button-case reset-horizontal" data-vert-target="sec-1"><svg viewBox="0 0 100 100">
+  <polygon points="0,90 50,10 100,90 50,45"/></svg></p>
+      <div class="grid full-width">
+        <div class="col-3">
+          <img src="https://picsum.photos/300/300/?random"  class="
+          full-width"  alt="Daniel Swinkels">
+        </div>
+        <div class="col-9">
+          <h2>Daniel Swinkels</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <p class="screen-vertical-wipe svg-button-case" data-vert-target="sec-3"><svg viewBox="0 0 100 100">
+  <polygon points="0,10 50,90 100,10 50,65"/>
+</svg></p>
+
+    </section>
+    <section class="inactive sec" data-vert-sec="sec-3">
+      <p class="screen-vertical-wipe svg-button-case" data-vert-target="sec-2"><svg viewBox="0 0 100 100">
+  <polygon points="0,90 50,10 100,90 50,45"/></svg></p>
+      <h2>Project Reviews</h2>
+      {% for project in page.projects %}
+      <div class="grid full-width alt-div">
+        <div class="col-6">
+          <h2>{{project.name}}</h2>
+          <p>{{project.para}}</p>
+        </div>
+        <div class="col bg" style="background-image:url('{{project.website_url}}')">
+        </div>
+      </div>
+      {% endfor %}
+      <p class="screen-vertical-wipe svg-button-case" data-vert-target="sec-4"><svg viewBox="0 0 100 100">
+  <polygon points="0,10 50,90 100,10 50,65"/>
+</svg></p>
+    </section>
+  </div>
+  <div class="horizontal-sec mans" data-horizontal-sec="sec-3">
+    <header class="sec" data-vert-sec="sec-1">
+      <div class="overlay horizontal-center full-screen-height flex vert-even-spaced ">
+      <h2 class="title">
+        The Man
+      </h2>
+      <p class="screen-vertical-wipe svg-button-case screen-horizontal-wipe" data-horizontal-target="sec-3" data-vert-target="sec-2"><svg viewBox="0 0 100 100">
+  <polygon points="0,10 50,90 100,10 50,65"/>
+</svg></p>
+      </div>
+    </header >
+    <section class="inactive sec" data-vert-sec="sec-2">
+      <p class="screen-vertical-wipe svg-button-case reset-horizontal" data-vert-target="sec-1"><svg viewBox="0 0 100 100">
+  <polygon points="0,90 50,10 100,90 50,45"/></svg></p>
+      <div class="grid full-width">
+        <div class="col-3">
+          <img src="https://picsum.photos/300/300/?random" alt="Daniel Swinkels">
+        </div>
+        <div class="col-9">
+          <h2>Daniel Swinkels</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/main.js" type="text/javascript"></script>
+  </body>
+  </html>
