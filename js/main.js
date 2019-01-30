@@ -19,7 +19,7 @@ $( document ).ready(function() {
     console.log("vert")
     $(".sec").each(function(){
       if($(this).attr("data-vert-sec") !== target){
-        $(this).addClass("inactive")
+        $(this).addClass("inactive");
       }
       else {
         $(this).removeClass("inactive");
@@ -28,7 +28,7 @@ $( document ).ready(function() {
   })
 
   $(".reset-horizontal").click(function(){
-    $(".horizontal-sec").removeClass("inactive")
+    $(".horizontal-sec").removeClass("inactive").removeClass("active")
   })
 
 })
