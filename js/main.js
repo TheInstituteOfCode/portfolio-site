@@ -5,11 +5,11 @@ $( document ).ready(function() {
     var target = $(this).attr("data-horizontal-target");
     console.log("horiz")
     $(".horizontal-sec").each(function(){
-      if($(this).attr("data-horizontal-sec") == target){
-        $(this).removeClass("inactive").addClass("active");
+      if($(this).attr("data-horizontal-sec") !== target){
+        $(this).addClass("inactive").removeClass("active")
       }
       else {
-       $(this).addClass("inactive").removeClass("active")
+        $(this).removeClass("inactive").addClass("active");
       }
     })
   })
@@ -18,11 +18,11 @@ $( document ).ready(function() {
     var target = $(this).attr("data-vert-target");
     console.log("vert")
     $(".sec").each(function(){
-      if($(this).attr("data-vert-sec") == target){
-        $(this).removeClass("inactive");
+      if($(this).attr("data-vert-sec") !== target){
+        $(this).addClass("inactive")
       }
       else {
-        $(this).addClass("inactive")
+        $(this).removeClass("inactive");
       }
     })
   })
