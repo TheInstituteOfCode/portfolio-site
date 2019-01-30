@@ -3,8 +3,8 @@
   padding:0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-transition:all 4.52s;
-  transition:all 4.52s;
+  -webkit-transition:all .52s;
+  transition:all .52s;
   -webkit-transition-delay:.1s;
           transition-delay:.1s;
           -webkit-transform-origin: top;
