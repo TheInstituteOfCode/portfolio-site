@@ -1,0 +1,164 @@
+*{
+  margin: 0;
+  padding:0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition:all 10.52s;
+  transition:all 10.52s;
+          -webkit-transform-origin: top;
+                  transform-origin: top;
+  background-position: center;
+  background-size: cover;
+  opacity: 1;
+  /* border:1px solid black; */
+}
+img{max-width: 100%}
+
+body{
+  font-family: 'Playfair Display', serif;
+  background-color: #31572C;
+  height: 100vh;
+}
+/* modular class */
+
+
+
+.full-width{
+  width: 100%;
+}
+.full-screen-height{
+  min-height: 100vh;
+}
+
+.flex{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.vert-center{
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.horizontal-center{-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
+.vert-even-spaced{
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header{
+  min-height: 100vh;
+}
+
+
+/* navgation */
+
+.horizontal-sec{
+  /* background-attachment: fixed; */
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+}
+
+.sec{
+  min-height: 100vh;
+  /* max-height: 999999vh; */
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: space-around;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.inactive, .inactive *{
+  font-size: 0;
+  height: 0;
+  min-height: 0;
+  width: 0;
+  min-width: 0;
+  overflow: hidden;
+  margin: 0;
+  border: none;
+  opacity: 0;
+}
+
+
+.svg-button-case{
+  padding: 0.3rem .3rem 0.1rem;
+}
+
+svg{
+  fill:black;
+  width: 2rem;
+
+}
+
+/* type */
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Alice', serif;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 1em;
+    margin: 1em;
+}
+
+
+/*  bg  */
+.overlay{
+  background-color: rgba(255,255,255,.2);
+  width: 100%;
+}
+
+[class*='bg']{
+  background-position: center;
+  background-size: cover;
+  min-height: 40vh;
+}
+
+.mentor header{
+  background-image: url("/img/mentor.jpg");
+}
+.developer header{
+  background-image: url("/img/mentor.jpg");
+}
+
+.mans header{
+  background-image: url("/img/mentor.jpg");
+}
+
+/* grid's */
+
+.alt-div:nth-child(2n){
+   -webkit-box-orient: horizontal;
+   -webkit-box-direction: reverse;
+       -ms-flex-direction: row-reverse;
+           flex-direction: row-reverse;
+}
+.alt-div [class*='bg']{
+  margin: 1rem;
+}
