@@ -2,12 +2,12 @@ $( document ).ready(function() {
 
   $(".burger-button").click(function(){
     $(".burger-button").toggleClass("active");
-    $(".burger-menu").slideToggle();
+    $(".burger-menu").toggleClass("menu-active");
   });
 
  $(".burger-menu").click(function(){
    $(".burger-button").toggleClass("active");
-   $(".burger-menu").slideToggle();
+   $(".burger-menu").toggleClass("menu-active");
  });
 
   $(".screen-horizontal-wipe").click(function(){
@@ -15,10 +15,10 @@ $( document ).ready(function() {
     console.log("horiz")
     $(".horizontal-sec").each(function(){
       if($(this).attr("data-horizontal-sec") !== target){
-        $(this).addClass("inactive").removeClass("active")
+        $(this).addClass("inactive").removeClass("active-horizontal")
       }
       else {
-        $(this).removeClass("inactive").addClass("active");
+        $(this).removeClass("inactive").addClass("active-horizontal");
       }
     })
   })
@@ -28,16 +28,16 @@ $( document ).ready(function() {
     console.log("vert")
     $(".sec").each(function(){
       if($(this).attr("data-vert-sec") !== target){
-        $(this).addClass("inactive");
+        $(this).addClass("inactive").removeClass("active-vert");
       }
       else {
-        $(this).removeClass("inactive");
+        $(this).removeClass("inactive").addClass("active-vert");
       }
     })
   })
 
   $(".reset-horizontal").click(function(){
-    $(".horizontal-sec").removeClass("inactive").removeClass("active")
+    $(".horizontal-sec").removeClass("inactive").removeClass("active-horizontal")
   })
 
 })

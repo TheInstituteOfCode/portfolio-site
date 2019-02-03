@@ -1,12 +1,13 @@
 ---
 student:
+  - name: Claire Collis
+    para: Dan is an amazing mentor.  I genuinely believe that I would not have learnt as much during my course without his knowledge, his ability to break down information for complete beginners like me and his general patience!  Since I left the course he has continued to help me when I break things with the same patience and a genuine want to help.
   - name: Antonina Tkachuk
     para: Daniel was super helpful and encouraged me to do more with my website.
-    website_pic: /img/antonina-tkachuk.png
-  - name: Bec
-    para: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    website_url: https://picsum.photos/200/300/?random
-
+  - name: Kerralie Nardelli
+    para: Dan is a great teacher with a very relaxed style that makes it easy to ask questions. Dan explains the  "why's" which really helps with overall understanding and making learning a positive experience.
+  - name: Karen Doane
+    para: With the patience of a saint and the mind of a computer, Daniel blends his innate ability to explain, adapt and teach each step of web development in an easy-to-understand way.  Even better, if he is unsure, he guides you through the research process, which allows you to learn even more! Daniels code-wired brain combines with his creative talent, creating functional and beautiful websites.  I am lucky to have him on speed dial as he is a life-saver.
 projects:
   - name: Filterable Masonry Gallerie
     para: a masonry gallerie is one that uses a non-traditional grid layout. With some of the the blocks might be taller while some might be wider all frown togeather in a way that tessellates. The demo can be found on <a href="https://codepen.io/deswin/pen/apOXMQ">codepen</a>
@@ -15,6 +16,9 @@ projects:
   - name: Diamond Grid
     para: Another interseting grid that uses diamonds instead of squares. Fully responcive and will resize to fit the screen. The demo can be found on <a href="https://codepen.io/deswin/pen/vyWKNZ">codepen</a>
     website_url: /img/diamond-grid.png
+  - name: Fancy Underlines
+    para: A fresh take on underlines on hover. Can be found on <a href="https://codepen.io/deswin/pen/aKELjB">codepen</a>
+    website_url: /img/hover-effect.png
 ---
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -29,148 +33,108 @@ projects:
 </head>
 <body class="flex">
   <nav>
-     <div class="burger-button">
-         <span class="burger-top"></span>
-         <span class="burger-middle"></span>
-         <span class="burger-bottom"></span>
-     </div>
-      <div class="burger-menu">
-        <a href="">The Home</a>
-        <a href="#"  class="screen-vertical-wipe svg-button-case screen-horizontal-wipe" data-horizontal-target="sec-1" data-vert-target="sec-2">The Mentor</a>
-        <a href="#" class="screen-vertical-wipe svg-button-case screen-horizontal-wipe" data-horizontal-target="sec-2" data-vert-target="sec-2">The Developer</a>
-        <a href="#" class="screen-vertical-wipe svg-button-case screen-horizontal-wipe" data-horizontal-target="sec-3" data-vert-target="sec-2">The Man</a>
-     </div>
-   </nav>
-  <div class="horizontal-sec mentor" data-horizontal-sec="sec-1">
-    <header class="sec overlay-parent" data-vert-sec="sec-1">
-      <div class="overlay horizontal-center full-screen-height flex vert-even-spaced ">
-
-      <h2 class="title">
-        The Mentor
-      </h2>
-      <p class="screen-vertical-wipe svg-button-case screen-horizontal-wipe" data-horizontal-target="sec-1" data-vert-target="sec-2"><svg viewBox="0 0 100 100">
-  <polygon points="0,10 50,90 100,10 50,65"/>
-</svg></p>
+    <div class="burger-button">
+      <span class="burger-top"></span>
+      <span class="burger-middle"></span>
+      <span class="burger-bottom"></span>
     </div>
-    </header>
-    <section class="inactive sec" data-vert-sec="sec-2">
-      <p class="screen-vertical-wipe svg-button-case reset-horizontal" data-vert-target="sec-1">
-        <svg viewBox="0 0 100 100">
-          <polygon points="0,90 50,10 100,90 50,45"/>
+    <div class="burger-menu flex center vert-even-spaced ">
+      <p class="fancy-hover reset-horizontal screen-vertical-wipe" data-vert-target="sec-1">The Home</p>
+      <p class="screen-vertical-wipe screen-horizontal-wipe fancy-hover" data-horizontal-target="sec-1" data-vert-target="sec-2">The Mentor</p>
+      <p class="screen-vertical-wipe screen-horizontal-wipe fancy-hover" data-horizontal-target="sec-2" data-vert-target="sec-2">The Developer</p>
+      <p class="screen-vertical-wipe screen-horizontal-wipe fancy-hover" data-horizontal-target="sec-3" data-vert-target="sec-2">The Man</p>
+    </div>
+  </nav>
+  <div class="horizontal-sec mentor" data-horizontal-sec="sec-1">
+    <header class="sec overlay-parent screen-vertical-wipe screen-horizontal-wipe" data-horizontal-target="sec-1" data-vert-target="sec-2" data-vert-sec="sec-1">
+      <div class="overlay horizontal-center full-screen-height flex vert-even-spaced">
+        <h2 class="title">
+          The Mentor
+        </h2>
+        <p class="screen-vertical-wipe svg-button-case screen-horizontal-wipe" data-horizontal-target="sec-1" data-vert-target="sec-2"><svg viewBox="0 0 100 100">
+          <polygon points="0,10 50,90 100,10 50,65"/>
         </svg>
       </p>
-      <div class="grid full-width">
-        <div class="col-3">
-          <img src="https://picsum.photos/300/300/?random" class="
-          full-width" alt="Daniel Swinkels">
-        </div>
-        <div class="col-9">
-          <h2>Dan as a Mentor</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
+    </div>
+  </header>
+  <section class="inactive sec" data-vert-sec="sec-2">
+    <div class="grid-right full-width">
+      <div class="sidepic mentor">
       </div>
-
-      <p class="screen-vertical-wipe svg-button-case" data-vert-target="sec-3"><svg viewBox="0 0 100 100">
-  <polygon points="0,10 50,90 100,10 50,65"/>
-</svg></p>
-    </section>
-    <section class="inactive sec" data-vert-sec="sec-3">
-      <p class="screen-vertical-wipe svg-button-case" data-vert-target="sec-2"><svg viewBox="0 0 100 100">
-  <polygon points="0,90 50,10 100,90 50,45"/></svg></p>
+      <div class="col-7">
+        <h2>Dan as a Mentor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       <h2>Student Reviews</h2>
       {% for student in page.student %}
-      <div class="grid full-width alt-div">
-        <div class="col-6">
-          <h2>{{student.name}}</h2>
-          <p>{{student.para}}</p>
+        <div class="speech">
+          <p>{{student.para}}
+            <svg class="speech-svg" viewBox="0 0 100 100">
+              <polygon points="0,0 50,50 100,0"/>
+            </svg>
+          </p>
         </div>
-        <div class="col bg" style="background-image:url('{{student.website_pic}}')">
-        </div>
-      </div>
+        <h3 class="right">{{student.name}}</h3>
       {% endfor %}
-      <p class="screen-vertical-wipe svg-button-case" data-vert-target="sec-4"><svg viewBox="0 0 100 100">
-  <polygon points="0,10 50,90 100,10 50,65"/>
-</svg></p>
     </section>
   </div>
   <div class="horizontal-sec developer" data-horizontal-sec="sec-2">
-    <header class="sec overlay-parent" data-vert-sec="sec-1">
+    <header class="sec overlay-parent screen-vertical-wipe screen-horizontal-wipe" data-horizontal-target="sec-2" data-vert-target="sec-2" data-vert-sec="sec-1">
       <div class="overlay horizontal-center full-screen-height flex vert-even-spaced ">
 
-      <h2 class="title">
-        The Developer
-      </h2>
-      <p class="screen-vertical-wipe svg-button-case screen-horizontal-wipe" data-horizontal-target="sec-2" data-vert-target="sec-2"><svg viewBox="0 0 100 100">
-  <polygon points="0,10 50,90 100,10 50,65"/>
-</svg></p>
+        <h2 class="title">
+          The Developer
+        </h2>
+        <p class="screen-vertical-wipe svg-button-case screen-horizontal-wipe" data-horizontal-target="sec-2" data-vert-target="sec-2"><svg viewBox="0 0 100 100">
+          <polygon points="0,10 50,90 100,10 50,65"/>
+        </svg>
+      </p>
       </div>
     </header >
     <section class="inactive sec" data-vert-sec="sec-2">
-      <p class="screen-vertical-wipe svg-button-case reset-horizontal" data-vert-target="sec-1"><svg viewBox="0 0 100 100">
-  <polygon points="0,90 50,10 100,90 50,45"/></svg></p>
-      <div class="grid full-width">
-        <div class="col-3">
-          <img src="https://picsum.photos/300/300/?random"  class="
-          full-width"  alt="Daniel Swinkels">
-        </div>
-        <div class="col-9">
+      <div class="sidepic mentor">
+      </div>
+      <div class="grid-right">
+        <div class="col-7">
           <h2>Daniel Swinkels</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h2>Project Reviews</h2>
+          {% for project in page.projects %}
+          <div class="grid-spaceAround full-width alt-div">
+            <div class="col-6">
+              <h2>{{project.name}}</h2>
+              <p>{{project.para}}</p>
+            </div>
+            <div class="col-5 bg" style="background-image:url('{{project.website_url}}'); background-position:{{project.pic-position}}">
+            </div>
+          </div>
+          {% endfor %}
         </div>
       </div>
-      <p class="screen-vertical-wipe svg-button-case" data-vert-target="sec-3"><svg viewBox="0 0 100 100">
-  <polygon points="0,10 50,90 100,10 50,65"/>
-</svg></p>
-
-    </section>
-    <section class="inactive sec" data-vert-sec="sec-3">
-      <p class="screen-vertical-wipe svg-button-case" data-vert-target="sec-2"><svg viewBox="0 0 100 100">
-  <polygon points="0,90 50,10 100,90 50,45"/></svg></p>
-      <h2>Project Reviews</h2>
-      {% for project in page.projects %}
-      <div class="grid-spaceAround full-width alt-div">
-        <div class="col-6">
-          <h2>{{project.name}}</h2>
-          <p>{{project.para}}</p>
-        </div>
-        <div class="col-5 bg" style="background-image:url('{{project.website_url}}'); background-position:{{project.pic-position}}">
-        </div>
-      </div>
-      {% endfor %}
-      <p class="screen-vertical-wipe svg-button-case" data-vert-target="sec-4"><svg viewBox="0 0 100 100">
-  <polygon points="0,10 50,90 100,10 50,65"/>
-</svg></p>
     </section>
   </div>
   <div class="horizontal-sec mans" data-horizontal-sec="sec-3">
-    <header class="sec overlay-parent" data-vert-sec="sec-1">
+    <header class="sec overlay-parent screen-vertical-wipe screen-horizontal-wipe" data-horizontal-target="sec-3" data-vert-target="sec-2"data-vert-sec="sec-1">
       <div class="overlay horizontal-center full-screen-height flex vert-even-spaced ">
-      <h2 class="title">
-        The Man
-      </h2>
-      <p class="screen-vertical-wipe svg-button-case screen-horizontal-wipe" data-horizontal-target="sec-3" data-vert-target="sec-2"><svg viewBox="0 0 100 100">
-  <polygon points="0,10 50,90 100,10 50,65"/>
-</svg></p>
+        <h2 class="title">
+          The Man
+        </h2>
+        <p class="screen-vertical-wipe svg-button-case screen-horizontal-wipe" data-horizontal-target="sec-3" data-vert-target="sec-2"><svg viewBox="0 0 100 100">
+          <polygon points="0,10 50,90 100,10 50,65"/>
+        </svg></p>
       </div>
     </header >
     <section class="inactive sec" data-vert-sec="sec-2">
-      <p class="screen-vertical-wipe svg-button-case reset-horizontal" data-vert-target="sec-1"><svg viewBox="0 0 100 100">
-  <polygon points="0,90 50,10 100,90 50,45"/></svg></p>
-      <div class="grid full-width">
-        <div class="col-3">
-          <img src="https://picsum.photos/300/300/?random" alt="Daniel Swinkels">
+      <div class="grid-right full-width">
+        <div class="sidepic mentor">
         </div>
-        <div class="col-9">
+        <div class="col-7">
           <h2>Daniel Swinkels</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
       </div>
     </section>
   </div>
-
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/js/main.js" type="text/javascript"></script>
-  </body>
-  </html>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="/js/main.js" type="text/javascript"></script>
+</body>
+</html>
